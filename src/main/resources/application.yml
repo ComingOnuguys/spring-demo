@@ -12,3 +12,8 @@ logging:
   level:
     root: DEBUG
 
+
+taco:
+  orders:
+    pageSize: 30
+
