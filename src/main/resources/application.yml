@@ -1,12 +1,12 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:testdb
-    username: sa
-    password: sa
-    driverClassName: org.h2.Driver
-  sql:
-    init:
-      schema-locations: classpath:h2-ddl-init/init-table.sql
+    url: jdbc:mysql://192.168.0.105:3306/cnc?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+  #sql:
+  #  init:
+  #    schema-locations: classpath:h2-ddl-init/init-table.sql
 
 logging:
   level:
@@ -16,4 +16,3 @@ logging:
 taco:
   orders:
     pageSize: 30
-
