@@ -16,8 +16,6 @@ public class Runcommand {
                 while ((line = lnr.readLine()) != null) {
                     info = info + line + "\n";
                 }
-            } catch (IOException e) {
-                info = e.toString();
             } catch (Exception e) {
                 info = e.toString();
             }
